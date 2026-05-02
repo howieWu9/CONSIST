@@ -1,1 +1,5 @@
-# CONSIST
+﻿CONSIST targets conflict-aware reasoning in multi-hop question answering. Instead of directly using a large retrieved graph, our method constructs a compact and minimally sufficient subgraph for answer generation. It first retrieves candidate evidence paths from explicit knowledge graphs and co-occurrence graphs, then performs multi-seed initialization, conflict scoring, utility estimation, Nash-optimized graph editing, rollout-based refinement, and pruning. Through this process, CONSIST aims to preserve answer-relevant evidence while reducing noisy, redundant, or conflicting information.
+
+The repository keeps the full experimental engineering flow used in our study, including data preparation, document and entity embedding, graph construction, online retrieval, path ranking, subgraph editing, answer generation, ablation variants, and analysis utilities. 
+
+The main experimental modes include the baseline pipeline, the full CONSIST method, and ablation variants that remove or modify conflict modeling, Nash editing, add-only editing, and random pruning.
